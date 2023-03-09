@@ -1,0 +1,22 @@
+.skillsBlock {
+  height: 100vh;
+  background-color: azure;
+}
+
+.skillsContainer {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* чтобы перезатереть свойства из common container */
+
+.title {
+  background-color: bisque;
+}
+
+.skills {
+  border: 1px solid;
+  /* height: 100%; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
