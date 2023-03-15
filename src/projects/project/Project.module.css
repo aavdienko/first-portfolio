@@ -1,0 +1,40 @@
+.project {
+  width: 250px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  text-align: center;
+}
+
+.project h3 {
+  margin-left: 10px;
+  background-color: bisque;
+}
+
+/* .project span {
+  margin-left: 10px;
+  background-color: bisque;
+} */
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+  width: 250px;
+  background-color: dimgray;
+}
+
+.icon button {
+  margin: 10px;
+  border-radius: 15px;
+  background-color: yellowgreen;
+}
+
+.description {
+  width: 90%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: bisque;
+}

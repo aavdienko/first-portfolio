@@ -1,9 +1,9 @@
-.skillsBlock {
+.projectsBlock {
   height: 100vh;
-  background-color: azure;
+  background-color: cornflowerblue
 }
 
-.skillsContainer {
+.projectsContainer {
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -13,7 +13,7 @@
   background-color: bisque;
 }
 
-.skills {
+.projects {
   border: 1px solid;
   /* height: 100%; */
   width: 100%;
