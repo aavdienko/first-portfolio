@@ -3,9 +3,13 @@
   background-color: blanchedalmond;
 }
 
-.skillsContainer {
+.contactsContainer {
   flex-direction: column;
   justify-content: space-between;
+}
+
+.contactsContainer button {
+  margin-bottom: 10px;
 }
 
 .form {
