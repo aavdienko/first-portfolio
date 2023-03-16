@@ -1,6 +1,7 @@
 .contactsBlock {
-  height: 70vh;
+  min-height: 70vh;
   background-color: blanchedalmond;
+  margin-bottom: 10px;
 }
 
 .contactsContainer {

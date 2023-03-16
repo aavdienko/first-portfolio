@@ -1,7 +1,8 @@
 
 .mainBlock {
-  height: 100vh;
+  min-height: 100vh;
   background-color: blanchedalmond;
+  margin-bottom: 10px;
 }
 
 .greeting {

@@ -1,6 +1,7 @@
 .projectsBlock {
-  height: 100vh;
-  background-color: cornflowerblue
+  /* height: 100vh; */
+  background-color: cornflowerblue;
+  margin-bottom: 10px;
 }
 
 .projectsContainer {
