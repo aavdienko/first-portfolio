@@ -1,26 +1,24 @@
 .projectsBlock {
   /* height: 100vh; */
-  background-color: cornflowerblue;
-  margin-bottom: 10px;
+  background-color: #1f1f20;
+  padding: 100px 0;
 }
 
 .projectsContainer {
   flex-direction: column;
   justify-content: flex-start;
+  flex-wrap: nowrap;
 }
 /* чтобы перезатереть свойства из common container */
 
-.title {
-  background-color: bisque;
-}
-
 .projects {
-  border: 1px solid;
   /* height: 100%; */
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 30px;
+  align-items: flex-start;
 }
 
 @media screen and (max-width: 625px) {

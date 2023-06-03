@@ -1,7 +1,7 @@
 .skillsBlock {
   /* min-height: 100vh; */
-  background-color: azure;
-  margin-bottom: 10px;
+  background-color: #1f1f20;
+  padding: 100px 0;
 }
 
 .skillsContainer {
@@ -9,10 +9,6 @@
   justify-content: flex-start;
 }
 /* чтобы перезатереть свойства из common container */
-
-.title {
-  background-color: bisque;
-}
 
 .skills {
   border: 1px solid;

@@ -1,16 +1,24 @@
 .project {
-  width: 250px;
-  background-color: whitesmoke;
+  width: 350px;
+  background: #252527;
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
-  text-align: center;
+  /* align-items:flex-start; */
+  /* text-align: center; */
+}
+
+.projectInfo {
+  padding: 25px 20px;
 }
 
 
-.project h3 {
-  margin-left: 10px;
-  background-color: bisque;
+.projectTitle {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 0 0 5px;
+  line-height: 1.2;
+  color: white;
 }
 
 /* .project span {
@@ -22,20 +30,42 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100px;
-  width: 250px;
-  background-color: dimgray;
+  height: 300px;
+  /* width: 250px; */
+  /* background-color: dimgray; */
+  /* align-items: center; */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.icon::before {
+  position: absolute;
+  content: '';
+  background-color: gray;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.4;
 }
 
 .icon button {
+  font-family: 'Josefin Sans', sans-serif;
   margin: 10px;
   border-radius: 15px;
-  background-color: yellowgreen;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 1;
 }
 
 .description {
   width: 90%;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  background-color: bisque;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  font-weight: 400;
+  font-size: 12px;
+  /* margin-left: 10px;
+  margin-bottom: 10px; */
+  color: #fff;
 }
