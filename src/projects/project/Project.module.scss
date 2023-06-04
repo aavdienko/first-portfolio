@@ -1,0 +1,134 @@
+@import '../../common/styles/sass/variables.scss';
+@import '../../common/styles/sass/mixins.scss';
+
+.project {
+  width: 350px;
+  background: $bgSecondColor;
+  display: flex;
+  flex-direction: column;
+  /* align-items:flex-start; */
+  /* text-align: center; */
+  .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    /* width: 250px; */
+    /* background-color: dimgray; */
+    /* align-items: center; */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &:hover {
+      &::before {
+        position: absolute;
+        content: '';
+        background-color: gray;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.4;
+      }
+    }
+    & button {
+      font-family: $josefinFont;
+      margin: 10px;
+      border-radius: 15px;
+      background-color: $primaryColor;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+    }
+  }
+  .projectInfo {
+    padding: 25px 20px;
+    .projectTitle {
+      @include text($josefinFont, 16px, 1.2);
+      // использовали mixin для данных параметов
+      // font-family: 'Josefin Sans', sans-serif;
+      // font-size: 16px;
+      // line-height: 1.2;
+      // color: $textColor;
+      letter-spacing: 1px;
+      margin: 0 0 5px;
+    }
+    .description {
+      @include text($poppinsFont, 12px, 1.8);
+      font-weight: 400;
+      /* margin-left: 10px;
+      margin-bottom: 10px; */
+
+      // font-family: $poppinsFont;
+      // font-size: 12px;
+      // line-height: 1.8;
+      // color: $textColor;
+    }
+  }
+  @media screen and (max-width: 880px) {
+    // justify-content: center;
+    margin-bottom: 5px;
+  }
+}
+
+// .projectInfo {
+//   padding: 25px 20px;
+// }
+
+// .projectTitle {
+//   font-family: 'Josefin Sans', sans-serif;
+//   font-size: 16px;
+//   letter-spacing: 1px;
+//   margin: 0 0 5px;
+//   line-height: 1.2;
+//   color: white;
+// }
+
+/* .project span {
+  margin-left: 10px;
+  background-color: bisque;
+} */
+
+// .icon {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   height: 300px;
+//   /* width: 250px; */
+//   /* background-color: dimgray; */
+//   /* align-items: center; */
+//   background-size: cover;
+//   background-position: center;
+//   position: relative;
+// }
+
+// .icon::before {
+//   position: absolute;
+//   content: '';
+//   background-color: gray;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   opacity: 0.4;
+// }
+
+// .icon button {
+//   font-family: 'Josefin Sans', sans-serif;
+//   margin: 10px;
+//   border-radius: 15px;
+//   background-color: rgb(255, 255, 255);
+//   position: relative;
+//   z-index: 1;
+// }
+
+// .description {
+//   width: 90%;
+//   font-family: 'Poppins', sans-serif;
+//   line-height: 1.8;
+//   font-weight: 400;
+//   font-size: 12px;
+//   /* margin-left: 10px;
+//   margin-bottom: 10px; */
+//   color: #fff;
+// }

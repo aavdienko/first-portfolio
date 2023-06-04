@@ -1,0 +1,33 @@
+@import '../../common/styles/sass/variables.scss';
+@import '../../common/styles/sass/mixins.scss';
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  background: $bgSecondColor;
+
+  padding: 10px;
+  /* margin-bottom: 5px; */
+  .icon {
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+  }
+  & h3 {
+    @include text($josefinFont, 16px, 1.2);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .description {
+    @include text($poppinsFont, 14px, 1.8);
+    font-weight: 400;
+  }
+  @media screen and (max-width: 680px) {
+    margin-bottom: 5px;
+  }
+}
