@@ -13,4 +13,20 @@
   background: $primaryColor;
   margin: 10px;
   border-radius: 15px;
+  cursor: pointer;
+}
+
+@mixin componentBlock($flexDirection, $justifyContent) {
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+}
+
+@mixin displayJustifyContent($display, $justifyContent) {
+  display: $display;
+  justify-content: $justifyContent;
+}
+
+@mixin displayFlexDirection($display, $flexDirection) {
+  display: $display;
+  flex-direction: $flexDirection;
 }

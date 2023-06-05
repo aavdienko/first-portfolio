@@ -1,17 +1,16 @@
 @import '../common/styles/sass/variables.scss';
+@import '../common/styles/sass/mixins.scss';
 
 .projectsBlock {
   background-color: $bgColor;
   padding: 100px 0;
   /* чтобы перезатереть свойства из common container */
   .projectsContainer {
-    flex-direction: column;
-    justify-content: flex-start;
+    @include componentBlock(column, flex-start);
     flex-wrap: nowrap;
     .projects {
+      @include displayJustifyContent(flex, space-between);
       width: 100%;
-      display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
       margin-top: 30px;
       align-items: flex-start;

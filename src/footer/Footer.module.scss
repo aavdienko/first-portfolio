@@ -2,36 +2,29 @@
 @import '../common/styles/sass/mixins.scss';
 
 .footerBlock {
-  background: $bgColor;
-  display: block;
-  justify-content: flex-end;
+  @include displayJustifyContent(block, flex-end);
   align-items: center;
   text-align: center;
   padding: 40px 0;
+  background: $bgColor;
   .skillsContainer {
-    flex-direction: column;
-    justify-content: space-between;
+    @include componentBlock(column, space-between);
     .title {
+      @include text($josefinFont, 30px, 1.2);
       background: $bgColor;
       margin: 0 0 30px;
-      font-family: 'Josefin Sans', sans-serif;
-      color: $textColor;
       text-transform: capitalize;
-      font-size: 30px;
-      line-height: 1.2;
       letter-spacing: 5px;
       position: relative;
     }
     .icons {
+      @include displayJustifyContent(flex, space-around);
       border: 1px solid;
       width: 100%;
-      display: flex;
-      justify-content: space-around;
       flex-wrap: wrap;
       .icon {
+        @include displayFlexDirection(flex, row);
         margin: 10px 0px ;
-        display: flex;
-        flex-direction: row;
         height: 60px;
         width: 60px;
         background-size: cover;
@@ -45,5 +38,4 @@
       color: rgba(255, 255, 255, .5);
     }
   }
-
 }

@@ -1,19 +1,19 @@
 @import '../../styles/sass/variables.scss';
+@import '../../styles/sass/mixins.scss';
 
 
 .title {
+  @include text ($josefinFont, 30px, 1.2);
   margin: 0 0 30px;
-  font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
-  color: $textColor;
   text-transform: capitalize;
-  font-size: 30px;
-  line-height: 1.2;
   letter-spacing: 5px;
   position: relative;
+
   & h2 {
     margin: 0;
   }
+
   & ::after {
     content: '';
     position: absolute;
@@ -25,18 +25,3 @@
     transform: translate(-50%, 50%);
   }
 }
-
-// .title::after {
-//   content: '';
-//   position: absolute;
-//   background: #fff;
-//   width: 100px;
-//   height: 1px;
-//   bottom: -30px;
-//   left: 50%;
-//   transform: translate(-50%, 50%);
-// }
-
-// .title h2 {
-//   margin: 0;
-// }

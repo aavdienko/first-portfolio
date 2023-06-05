@@ -3,10 +3,9 @@
 
 
 .nav {
+  @include displayJustifyContent(flex, space-around);
   border: 1px solid black;
-  width: 300px;
-  display: flex;
-  justify-content: space-between;
+  width: 400px;
   & a {
     color: white;
     text-decoration: none;

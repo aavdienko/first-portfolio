@@ -2,18 +2,16 @@
 @import '../common/styles/sass/mixins.scss';
 
 .contactsBlock {
-  background-color:  $bgColor;
+  background-color: $bgColor;
   padding: 100px 0;
   .contactsContainer {
-    flex-direction: column;
-    justify-content: space-between;
+    @include componentBlock(column, space-between);
     .form {
+      @include displayFlexDirection(flex, column);
+      border: 1px solid;
       margin-top: 30px;
       width: 50%;
       padding: 10px;
-      display: flex;
-      flex-direction: column;
-      border: 1px solid;
       & input {
         height: 30px;
         background: $bgSecondColor;

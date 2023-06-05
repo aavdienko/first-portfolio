@@ -2,14 +2,12 @@
 @import '../../common/styles/sass/mixins.scss';
 
 .skill {
-  display: flex;
-  flex-direction: column;
+  @include displayFlexDirection(flex, column);
   align-items: center;
   text-align: center;
   width: 250px;
   background: $bgSecondColor;
   padding: 10px;
-  /* margin-bottom: 5px; */
   .icon {
     height: 80px;
     width: 80px;
