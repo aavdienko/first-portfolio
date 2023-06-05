@@ -1,0 +1,49 @@
+@import '../common/styles/sass/variables.scss';
+@import '../common/styles/sass/mixins.scss';
+
+.footerBlock {
+  background: $bgColor;
+  display: block;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+  .skillsContainer {
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+      background: $bgColor;
+      margin: 0 0 30px;
+      font-family: 'Josefin Sans', sans-serif;
+      color: $textColor;
+      text-transform: capitalize;
+      font-size: 30px;
+      line-height: 1.2;
+      letter-spacing: 5px;
+      position: relative;
+    }
+    .icons {
+      border: 1px solid;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .icon {
+        margin: 10px 0px ;
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+        width: 60px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        cursor: pointer;
+      }
+    }
+    .copyRight {
+      margin: 0;
+      color: rgba(255, 255, 255, .5);
+    }
+  }
+
+}

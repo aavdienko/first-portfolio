@@ -1,0 +1,49 @@
+@import '../common/styles/sass/variables.scss';
+@import '../common/styles/sass/mixins.scss';
+
+.mainBlock {
+  min-height: 100vh;
+  background-color: $bgColor;
+  .greeting {
+    // width: 300px;
+    border: 2px solid $primaryColor;
+    padding: 5px;
+    @include text($poppinsFont, 16px, 1.2);
+    /* цвет для отображения границ блока */
+    & h1 {
+      @include text($josefinFont, 50px, 1.2);
+      letter-spacing: 5px;
+    }
+    & p {
+      font-size: 27px;
+    }
+  }
+  .photo {
+    border: 2px solid $primaryColor;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-color: $primaryColor;
+    // opacity: 0.8;
+  }
+}
+
+// .greeting {
+//   width: 300px;
+//   border: 2px solid $primaryColor;
+//   padding: 5px;
+//   @include text($josefinFont, 16px, 1.2);
+//   /* цвет для отображения границ блока */
+// }
+
+// .photo {
+//   border: 2px solid $primaryColor;
+//   width: 300px;
+//   height: 400px;
+//   background-size: cover;
+//   background-position: center;
+//   background-color: $primaryColor;
+//   // opacity: 0.8;
+// }
+

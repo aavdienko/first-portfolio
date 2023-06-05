@@ -1,0 +1,19 @@
+@import '../../common/styles/sass/mixins.scss';
+@import '../../common/styles/sass/variables.scss';
+
+
+.nav {
+  border: 1px solid black;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  & a {
+    color: white;
+    text-decoration: none;
+    @include text($josefinFont, 14px, 1.2);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+

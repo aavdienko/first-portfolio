@@ -32,10 +32,7 @@
       }
     }
     & button {
-      font-family: $josefinFont;
-      margin: 10px;
-      border-radius: 15px;
-      background-color: $primaryColor;
+      @include button();
       position: relative;
       z-index: 1;
       cursor: pointer;

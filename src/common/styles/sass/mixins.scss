@@ -6,3 +6,11 @@
   line-height: $lineHeight;
   color: $textColor;
 }
+
+@mixin button() {
+  font-family: $josefinFont;
+  color: $textColor;
+  background: $primaryColor;
+  margin: 10px;
+  border-radius: 15px;
+}

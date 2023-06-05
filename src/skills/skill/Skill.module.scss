@@ -8,7 +8,6 @@
   text-align: center;
   width: 250px;
   background: $bgSecondColor;
-
   padding: 10px;
   /* margin-bottom: 5px; */
   .icon {
@@ -22,6 +21,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
+    padding-top: 20px;
   }
   .description {
     @include text($poppinsFont, 14px, 1.8);
