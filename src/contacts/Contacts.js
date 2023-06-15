@@ -1,6 +1,7 @@
 import style from './Contacts.module.scss';
 import styleContainer from './../common/styles/Container.module.css';
 import { Title } from '../common/components/title/Title';
+import { Button } from '../common/components/button/Button';
 
 export const Contacts = () => {
   return (
@@ -13,7 +14,8 @@ export const Contacts = () => {
           <input type='number' placeholder='tel'/>
           <textarea placeholder='description'/>
         </form>
-        <button>Send</button>
+        <Button title={'Send'}/>
+        {/* <button>Send</button> */}
       </div>
     </div>
   );

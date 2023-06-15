@@ -14,7 +14,8 @@
       flex-wrap: wrap;
       margin-top: 30px;
       align-items: flex-start;
-      @media screen and (max-width: 880px) {
+      gap: 20px;
+      @media screen and (max-width: 900px) {
         justify-content: center;
       }
     }

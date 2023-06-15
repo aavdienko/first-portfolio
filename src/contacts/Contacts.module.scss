@@ -10,8 +10,9 @@
       @include displayFlexDirection(flex, column);
       border: 1px solid;
       margin-top: 30px;
-      width: 50%;
-      padding: 10px;
+      width: 100%;
+      max-width: 500px;
+      gap: 10px;
       & input {
         height: 30px;
         background: $bgSecondColor;
@@ -24,9 +25,9 @@
         color: $textColor;
       }
     }
-    & button {
-      @include button()
-    }
+    // & button {
+    //   @include button()
+    // }
   }
 }
 

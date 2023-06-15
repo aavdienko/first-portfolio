@@ -12,8 +12,11 @@
   color: $textColor;
   background: $primaryColor;
   margin: 10px;
+  padding: 8px 25px;
   border-radius: 15px;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
 @mixin componentBlock($flexDirection, $justifyContent) {

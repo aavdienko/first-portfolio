@@ -2,8 +2,9 @@ import style from './Footer.module.scss';
 import styleContainer from './../common/styles/Container.module.css';
 import fbImage from '../assets/images/facebook.svg'
 import linkedInImage from '../assets/images/linkedin.svg'
-import gitHubImage from '../assets/images/git.svg'
+// import gitHubImage from '../assets/images/git.svg'
 import pinterestImage from '../assets/images/pinterest.svg'
+import gitHubImage from '../assets/images/gitNew.svg'
 
 
 
