@@ -1,6 +1,8 @@
 import style from './Main.module.scss';
 import styleContainer from './../common/styles/Container.module.css'
 import meImage from '../assets/images/me.svg'
+import { Particle } from '../common/components/practicle/Particle';
+
 
 export const Main = () => {
 

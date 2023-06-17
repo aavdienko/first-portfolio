@@ -18,3 +18,26 @@ const App = () => (
 )
 
 export default App;
+
+
+// import React from "react"; 
+// import Particles from "react-tsparticles"; 
+// import { loadFull } from "tsparticles"; 
+// const App = () => { 
+//   return ( 
+//     <> 
+//       <Particles 
+//         id="tsparticles" 
+//         init={particlesInit} 
+//         loaded={particlesLoaded} 
+//         options={{ 
+//           background: { 
+//             color: "rgb(10,10,25)", 
+//           }, 
+//           fpsLimit: 60, 
+//         }} 
+//       /> 
+//     </> 
+//   ); 
+// }; 
+// export default App; 
