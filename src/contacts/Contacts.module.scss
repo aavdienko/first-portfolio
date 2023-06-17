@@ -5,10 +5,10 @@
   background-color: $bgColor;
   padding: 100px 0;
   .contactsContainer {
-    @include componentBlock(column, space-between);
+    @include container();
+    @include flex(column, space-between, center, nowrap);
     .form {
       @include displayFlexDirection(flex, column);
-      border: 1px solid;
       margin-top: 30px;
       width: 100%;
       max-width: 500px;
@@ -25,9 +25,6 @@
         color: $textColor;
       }
     }
-    // & button {
-    //   @include button()
-    // }
   }
 }
 

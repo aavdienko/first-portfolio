@@ -15,9 +15,8 @@ export const Particle = () => {
   const particlesLoaded = useCallback(
     async (container) => {
       await console.log(container);
-    },
-    []
-  );
+    },[]);
+    
   return (
     <Particles
       id="tsparticles"

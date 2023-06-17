@@ -6,6 +6,13 @@
   align-items: center;
   min-height: 100vh;
   background-color: $bgColor;
+  .container {
+    @include container();
+    @include flex(center, space-around, center, wrap);
+    @media screen and (max-width: 1100px) {
+      flex-direction: column;
+    }
+  }
   .particles {
     position: absolute;
     top:0;
@@ -15,7 +22,7 @@
     opacity: 0.3;
   }
   .greeting {
-    width: 300px;
+    width: 350px;
     border: 2px solid $primaryColor;
     padding: 5px;
     @include text($poppinsFont, 16px, 1.2);
@@ -29,14 +36,16 @@
     }
   }
   .photo {
-    width: 300px;
+    width: 350px;
     border: 2px solid $primaryColor;
     padding: 5px;
-    height: 400px;
+    height: 450px;
     background-size: cover;
     background-position: center;
     background-color: $primaryColor;
   }
+
+
 }
 
 

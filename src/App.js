@@ -1,4 +1,4 @@
-import './App.css';
+import styles from './App.scss';
 import { Header } from './header/Header';
 import { Main } from './main/Main';
 import { Skills } from './skills/Skills';
@@ -7,7 +7,7 @@ import { Contacts } from './contacts/Contacts'
 import { Footer } from './footer/Footer'
 
 const App = () => (
-  <div className="App">
+  <div className={styles.app}>
     <Header/>
     <Main/>
     <Skills/>
@@ -18,26 +18,3 @@ const App = () => (
 )
 
 export default App;
-
-
-// import React from "react"; 
-// import Particles from "react-tsparticles"; 
-// import { loadFull } from "tsparticles"; 
-// const App = () => { 
-//   return ( 
-//     <> 
-//       <Particles 
-//         id="tsparticles" 
-//         init={particlesInit} 
-//         loaded={particlesLoaded} 
-//         options={{ 
-//           background: { 
-//             color: "rgb(10,10,25)", 
-//           }, 
-//           fpsLimit: 60, 
-//         }} 
-//       /> 
-//     </> 
-//   ); 
-// }; 
-// export default App; 

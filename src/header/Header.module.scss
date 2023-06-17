@@ -1,9 +1,20 @@
 @import '../common/styles/sass/variables.scss';
 @import '../common/styles/sass/mixins.scss';
 
-.header {
-  @include displayJustifyContent(flex, flex-end);
-  align-items: center;
-  height: 80px;
-  background: $bgColor;
+.headerBlock{
+  z-index: 100;
+  background-color:$bgColor;
+  width: 100%; 
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  color: #FFFFFF;
+  position: fixed;
+  transition: all 0.3s ;
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background: $bgColor;
+  }
 }

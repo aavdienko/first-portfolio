@@ -1,8 +1,9 @@
 import style from './Projects.module.scss';
-import styleContainer from './../common/styles/Container.module.css';
+import styleContainer from './../common/styles/Container.module.scss';
 import { Project } from './project/Project';
 import { Title } from '../common/components/title/Title';
 import projectImage from '../assets/images/project1.svg';
+import { Fade } from 'react-awesome-reveal';
 
 export const Projects = () => {
   const description =
@@ -13,27 +14,29 @@ export const Projects = () => {
   };
 
   return (
-    <div className={style.projectsBlock}>
-      <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-        <Title title={'Projects'} />
-        <div className={style.projects}>
-          <Project
-            style={proj1}
-            title={'Project #1'}
-            description={description}
-          />
-          <Project
-            style={proj1}
-            title={'Project #2'}
-            description={description}
-          />
-          <Project
-            style={proj1}
-            title={'Project #3'}
-            description={description}
-          />
+    <div id='projects'className={style.projectsBlock}>
+      <Fade direction={"up"} triggerOnce={true}>
+        <div className={style.projectsContainer}>
+          <Title title={'Projects'} />
+          <div className={style.projects}>
+            <Project
+              style={proj1}
+              title={'Project #1'}
+              description={description}
+            />
+            <Project
+              style={proj1}
+              title={'Project #2'}
+              description={description}
+            />
+            <Project
+              style={proj1}
+              title={'Project #3'}
+              description={description}
+            />
+          </div>
         </div>
-      </div>
+      </Fade>
     </div>
   );
 };

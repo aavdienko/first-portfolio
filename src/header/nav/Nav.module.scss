@@ -4,15 +4,41 @@
 
 .nav {
   @include displayJustifyContent(flex, space-around);
-  border: 1px solid black;
   width: 400px;
-  & a {
-    color: white;
-    text-decoration: none;
-    @include text($josefinFont, 14px, 1.2);
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    .navlinkItem  {
+      color: $textColor;
+      text-decoration: none;
+      @include text($josefinFont, 14px, 1.2);
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 8px 20px;
+      position: relative;
+      cursor: pointer;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        bottom: 5px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+        &:hover {
+          color: $primaryColor;
+          &::after{
+            background-color: $primaryColor;
+            transition: all 1s;
+          }
+        }
   }
+  .active{
+    color: $primaryColor;
+    &::after{
+      background-color: $primaryColor;
+      transition: all 1s;
+    }
+  }
+  
 }
 

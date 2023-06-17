@@ -1,11 +1,12 @@
 import style from './Skills.module.scss';
-import styleContainer from './../common/styles/Container.module.css';
+import styleContainer from './../common/styles/Container.module.scss';
 import { Skill } from './skill/Skill';
 import { Title } from '../common/components/title/Title';
 import htmlImage from '../assets/images/htmlIcon.svg';
 import cssImage from '../assets/images/cssIcon.svg';
 import jsImage from '../assets/images/jsIcon.svg';
 import reactImage from '../assets/images/react.svg';
+import { Fade } from "react-awesome-reveal";
 
 export const Skills = () => {
   const description =
@@ -25,16 +26,18 @@ export const Skills = () => {
   };
 
   return (
-    <div className={style.skillsBlock}>
-      <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-        <Title title={'Skills'} />
-        <div className={style.skills}>
-          <Skill style={htmlIcon} title={'HTML'} description={description} />
-          <Skill style={cssIcon} title={'CSS'} description={description} />
-          <Skill style={jsIcon} title={'JS'} description={description} />
-          <Skill style={reactIcon} title={'React'} description={description} />
+    <div id='skills'className={style.skillsBlock}>
+      <Fade direction={"up"} triggerOnce={true}>
+        <div className={style.skillsContainer}>
+          <Title title={'Skills'} />
+          <div className={style.skills}>
+            <Skill style={htmlIcon} title={'HTML'} description={description} />
+            <Skill style={cssIcon} title={'CSS'} description={description} />
+            <Skill style={jsIcon} title={'JS'} description={description} />
+            <Skill style={reactIcon} title={'React'} description={description} />
+          </div>
         </div>
-      </div>
+      </Fade>
     </div>
   );
 };
