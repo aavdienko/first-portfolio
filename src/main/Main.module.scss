@@ -9,8 +9,9 @@
   .container {
     @include container();
     @include flex(center, space-around, center, wrap);
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 800px) {
       flex-direction: column;
+      gap: 10px;
     }
   }
   .particles {
@@ -30,22 +31,72 @@
     & h1 {
       @include text($josefinFont, 50px, 1.2);
       letter-spacing: 5px;
+      @media screen and (max-height: 665px) {
+        font-size: 40px;
+      }
+      @media screen and (max-width: 1000px) {
+        font-size: 40px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 30px;
+      }
     }
     & p {
       font-size: 27px;
+      @media screen and (max-height: 665px) {
+        font-size: 22px;
+      }
+      @media screen and (max-width: 1000px) {
+        font-size: 22px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 16px;
+      }
+    }
+    @media screen and (max-height: 665px) {
+      width: 280px;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 300px;
+      height: 200px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 220px;
+      height: 150px;
+    }
+    @media screen and (max-width: 300px) {
+      width: 200px;
+      height: 150px;
     }
   }
   .photo {
     width: 350px;
+    height: 450px;
     border: 2px solid $primaryColor;
     padding: 5px;
-    height: 450px;
     background-size: cover;
     background-position: center;
     background-color: $primaryColor;
+    @media screen and (max-height: 665px) {
+      width: 250px;
+      height: 350px;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 300px;
+      height: 400px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 220px;
+      height: 270px;
+    }
+    @media screen and (max-width: 300px) {
+      width: 200px;
+      height: 250px;
+    }
   }
-
-
+  @media screen and (max-width: 1000px) {
+    padding: 10px 0;
+  }
 }
 
 

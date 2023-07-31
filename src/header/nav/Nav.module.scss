@@ -31,6 +31,9 @@
             transition: all 1s;
           }
         }
+        @media screen and (max-width: 400px) {
+          @include text($josefinFont, 12px, 1);
+        }
   }
   .active{
     color: $primaryColor;
@@ -39,6 +42,10 @@
       transition: all 1s;
     }
   }
-  
+  @media screen and (max-width: 410px) {
+    flex-direction: column;
+    align-items: center;
+
+  }
 }
 

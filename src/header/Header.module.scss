@@ -17,4 +17,9 @@
     height: 80px;
     background: $bgColor;
   }
+  @media screen and (max-width: 410px) {
+    justify-content: center;
+    padding-top: 20px;
+  }
+  
 }

@@ -5,12 +5,13 @@
   @include displayFlexDirection(flex, column);
   align-items: center;
   text-align: center;
-  width: 250px;
-  background: $bgSecondColor;
+  width: 150px;
+  height: 150px;
   padding: 10px;
+
   .icon {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     background-size: cover;
     background-position: center;
   }
@@ -19,11 +20,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding-top: 20px;
-  }
-  .description {
-    @include text($poppinsFont, 14px, 1.8);
-    font-weight: 400;
+    padding-top: 10px;
   }
   @media screen and (max-width: 680px) {
     margin-bottom: 5px;
