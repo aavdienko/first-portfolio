@@ -1,10 +1,11 @@
 import style from './Main.module.scss';
-
+import Particles from 'react-particles';
 import meImage from '../assets/images/me.svg';
 import { Particle } from '../common/components/practicle/Particle';
 import { Fade } from 'react-awesome-reveal';
 import ReactTypingEffect from 'react-typing-effect';
 import { Tilt } from 'react-tilt';
+import s from './../common/components/practicle/Particle.module.scss';
 
 // const defaultOptions = {
 //   reverse: false, // reverse the tilt direction
@@ -25,7 +26,8 @@ export const Main = () => {
 
   return (
     <div id='main' className={style.mainBlock}>
-      {/* <Particle/> */}
+      <Particle/>
+      {/* <Particles className={s.practicles} params={defaultOptions}/> */}
       <div className={style.container}>
         <Fade direction={'left'} triggerOnce={true}>
           <div className={style.greeting}>

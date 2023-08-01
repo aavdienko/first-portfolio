@@ -1,10 +1,8 @@
 import { useCallback } from 'react';
 // import loadFull from 'react-tsparticles';
-import { loadFull } from "tsparticles";
+import { loadFull } from 'tsparticles';
 import Particles from 'react-particles';
 import s from './Particle.module.scss';
-
-
 
 export const Particle = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -12,11 +10,10 @@ export const Particle = () => {
     await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(
-    async (container) => {
-      await console.log(container);
-    },[]);
-    
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container);
+  }, []);
+
   return (
     <Particles
       id="tsparticles"
@@ -24,8 +21,8 @@ export const Particle = () => {
       loaded={particlesLoaded}
       className={s.particles}
       options={{
+        fullScreen: { enable: false },
         particles: {
-          fullScreen: false,
           number: {
             value: 150,
             density: {
