@@ -13,16 +13,27 @@
       width: 100%;
       max-width: 500px;
       gap: 10px;
+      &:focus {
+        border: 2px solid $bgColor;
+      }
       & input {
         height: 30px;
         background: $bgSecondColor;
         color: $textColor;
+        &:focus {
+          border: 1px solid transparent;
+          transition: all 0.4s ease-in-out 0s;
+        }
       }
       & textarea {
         height: 150px;
         resize: none;
         background: $bgSecondColor;
         color: $textColor;
+        &:focus {
+          border: 1px solid transparent;
+          transition: all 0.4s ease-in-out 0s;
+        }
       }
     }
   }
